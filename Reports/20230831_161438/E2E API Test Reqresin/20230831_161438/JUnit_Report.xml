@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="E2E API Test Reqresin" time="10.166" tests="4" failures="0" errors="0">
+   <testsuite name="E2E API Test Reqresin" tests="4" failures="0" errors="0" time="10.166" skipped="0" timestamp="2023-08-31 16:14:52" hostname="muhammadramadhan - localhost" id="Test Suites/E2E API Test Reqresin">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/muhammadramadhan/Documents/QA-Test-PTQoin/Reports/20230831_161438/E2E API Test Reqresin/20230831_161438"/>
+         <property name="logFiles" value="/Users/muhammadramadhan/Documents/QA-Test-PTQoin/Reports/20230831_161438/E2E API Test Reqresin/20230831_161438/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="muhammadramadhan - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.5.5.208"/>
+      </properties>
+      <testcase name="Test Cases/ListUsersTest" time="5.682" classname="Test Cases/ListUsersTest" status="PASSED">
+         <system-out><![CDATA[2023-08-31 16:14:53 - [TEST_CASE][PASSED] - Test Cases/ListUsersTest: Test Cases/ListUsersTest
+
+2023-08-31 16:14:53 - [TEST_STEP][PASSED] - sendRequest(findTestObject("GET List Users", ["baseURL":baseURL])): Send request successfully
+
+2023-08-31 16:14:57 - [MESSAGE][INFO] - HAR: /Users/muhammadramadhan/Documents/QA-Test-PTQoin/Reports/20230831_161438/E2E API Test Reqresin/20230831_161438/requests/main/0.har
+
+2023-08-31 16:14:57 - [MESSAGE][PASSED] - Send request successfully
+
+2023-08-31 16:14:57 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("GET List Users")): Send request and verify the response successfully
+
+2023-08-31 16:14:57 - [MESSAGE][INFO] - HAR: /Users/muhammadramadhan/Documents/QA-Test-PTQoin/Reports/20230831_161438/E2E API Test Reqresin/20230831_161438/requests/main/1.har
+
+2023-08-31 16:14:58 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-08-31 16:14:58 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-08-31 16:14:58 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-08-31 16:14:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2023-08-31 16:14:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-08-31 16:14:58 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2023-08-31 16:14:58 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-08-31 16:14:58 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-08-31 16:14:58 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-08-31 16:14:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2023-08-31 16:14:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-08-31 16:14:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].first_name", "George"): Verify element property value successfully
+
+2023-08-31 16:14:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-08-31 16:14:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].id", 1): Verify element property value successfully
+
+2023-08-31 16:14:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-08-31 16:14:58 - [TEST_STEP][PASSED] - verifyElementsCount(response, "data", 6): Verify element count successfully
+
+2023-08-31 16:14:58 - [MESSAGE][PASSED] - Verify element count successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SingleUserTest" time="1.109" classname="Test Cases/SingleUserTest" status="PASSED">
+         <system-out><![CDATA[2023-08-31 16:14:58 - [TEST_CASE][PASSED] - Test Cases/SingleUserTest: Test Cases/SingleUserTest
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("GET Single User")): Send request and verify the response successfully
+
+2023-08-31 16:14:59 - [MESSAGE][INFO] - HAR: /Users/muhammadramadhan/Documents/QA-Test-PTQoin/Reports/20230831_161438/E2E API Test Reqresin/20230831_161438/requests/main/2.har
+
+2023-08-31 16:14:59 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-08-31 16:14:59 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-08-31 16:14:59 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-08-31 16:14:59 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2023-08-31 16:14:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.id", "5"): Verify element property value successfully
+
+2023-08-31 16:14:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.email", "charles.morris@reqres.in"): Verify element property value successfully
+
+2023-08-31 16:14:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Charles"): Verify element property value successfully
+
+2023-08-31 16:14:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.last_name", "Morris"): Verify element property value successfully
+
+2023-08-31 16:14:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - jsonString = response.getResponseBodyContent(): null
+
+2023-08-31 16:14:59 - [TEST_STEP][PASSED] - result = slurper.parseText(jsonString): null
+
+2023-08-31 16:15:00 - [TEST_STEP][PASSED] - xmail = email: null
+
+2023-08-31 16:15:00 - [TEST_STEP][PASSED] - email = xmail: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CreateUserTest" time="1.29" classname="Test Cases/CreateUserTest" status="PASSED">
+         <system-out><![CDATA[2023-08-31 16:15:00 - [TEST_CASE][PASSED] - Test Cases/CreateUserTest: Test Cases/CreateUserTest
+
+2023-08-31 16:15:00 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Register", ["email":email])): Send request successfully
+
+2023-08-31 16:15:01 - [MESSAGE][INFO] - HAR: /Users/muhammadramadhan/Documents/QA-Test-PTQoin/Reports/20230831_161438/E2E API Test Reqresin/20230831_161438/requests/main/3.har
+
+2023-08-31 16:15:01 - [MESSAGE][PASSED] - Send request successfully
+
+2023-08-31 16:15:01 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2023-08-31 16:15:01 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-08-31 16:15:01 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", "5"): Verify element property value successfully
+
+2023-08-31 16:15:01 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-08-31 16:15:01 - [TEST_STEP][PASSED] - getElementPropertyValue(response, "token"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/UpdateDataTest" time="1.381" classname="Test Cases/UpdateDataTest" status="PASSED">
+         <system-out><![CDATA[2023-08-31 16:15:01 - [TEST_CASE][PASSED] - Test Cases/UpdateDataTest: Test Cases/UpdateDataTest
+
+2023-08-31 16:15:01 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("PUT Update User", ["userName":"Syahril", "userJob":"QA Engineer"])): Send request and verify the response successfully
+
+2023-08-31 16:15:02 - [MESSAGE][INFO] - HAR: /Users/muhammadramadhan/Documents/QA-Test-PTQoin/Reports/20230831_161438/E2E API Test Reqresin/20230831_161438/requests/main/4.har
+
+2023-08-31 16:15:02 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-08-31 16:15:02 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-08-31 16:15:02 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-08-31 16:15:02 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-08-31 16:15:02 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-08-31 16:15:02 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-08-31 16:15:02 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2023-08-31 16:15:02 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-08-31 16:15:02 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "Syahril"): Verify element property value successfully
+
+2023-08-31 16:15:02 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-08-31 16:15:02 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "job", "QA Engineer"): Verify element property value successfully
+
+2023-08-31 16:15:02 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-08-31 16:14:52 - [TEST_SUITE][PASSED] - E2E API Test Reqresin: Test Cases/UpdateDataTest]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

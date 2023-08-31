@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>QATest-Qoin</name>
+   <name>web-service-tests</name>
    <tag></tag>
-   <UUID>c80bd4b7-b39c-4e40-9997-3e30223a7024</UUID>
+   <UUID>70e49f7f-c285-4694-91c6-58bf42b57202</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/muhammadramadhan/Documents/QA-Test-PTQoin/web-service-tests.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -24,6 +25,6 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
-   <timeStampInProperties>false</timeStampInProperties>
-   <type>GENERIC</type>
+   <timeStampInProperties>true</timeStampInProperties>
+   <type>WEBSERVICE</type>
 </Project>

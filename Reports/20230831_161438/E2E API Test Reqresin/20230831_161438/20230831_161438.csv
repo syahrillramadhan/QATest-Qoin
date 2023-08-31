@@ -1,0 +1,35 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+E2E API Test Reqresin,,,,2023-08-31 16:14:52,2023-08-31 16:15:02,10.166s,PASSED
+,,,,,,,
+Test Cases/ListUsersTest,,,,2023-08-31 16:14:53,2023-08-31 16:14:58,5.682s,PASSED
+"sendRequest(findTestObject(""GET List Users"", [""baseURL"":baseURL]))",,,,2023-08-31 16:14:53,2023-08-31 16:14:57,3.556s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET List Users""))",,,,2023-08-31 16:14:57,2023-08-31 16:14:58,1.212s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-08-31 16:14:58,2023-08-31 16:14:58,0.014s,PASSED
+"verifyElementPropertyValue(response, ""data[0].first_name"", ""George"")",,,,2023-08-31 16:14:58,2023-08-31 16:14:58,0.128s,PASSED
+"verifyElementPropertyValue(response, ""data[0].id"", 1)",,,,2023-08-31 16:14:58,2023-08-31 16:14:58,0.036s,PASSED
+"verifyElementsCount(response, ""data"", 6)",,,,2023-08-31 16:14:58,2023-08-31 16:14:58,0.062s,PASSED
+,,,,,,,
+Test Cases/SingleUserTest,,,,2023-08-31 16:14:58,2023-08-31 16:15:00,1.109s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET Single User""))",,,,2023-08-31 16:14:59,2023-08-31 16:14:59,0.578s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-08-31 16:14:59,2023-08-31 16:14:59,0.010s,PASSED
+"verifyElementPropertyValue(response, ""data.id"", ""5"")",,,,2023-08-31 16:14:59,2023-08-31 16:14:59,0.040s,PASSED
+"verifyElementPropertyValue(response, ""data.email"", ""charles.morris@reqres.in"")",,,,2023-08-31 16:14:59,2023-08-31 16:14:59,0.039s,PASSED
+"verifyElementPropertyValue(response, ""data.first_name"", ""Charles"")",,,,2023-08-31 16:14:59,2023-08-31 16:14:59,0.040s,PASSED
+"verifyElementPropertyValue(response, ""data.last_name"", ""Morris"")",,,,2023-08-31 16:14:59,2023-08-31 16:14:59,0.038s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2023-08-31 16:14:59,2023-08-31 16:14:59,0.004s,PASSED
+jsonString = response.getResponseBodyContent(),,,,2023-08-31 16:14:59,2023-08-31 16:14:59,0.002s,PASSED
+result = slurper.parseText(jsonString),,,,2023-08-31 16:14:59,2023-08-31 16:15:00,0.001s,PASSED
+xmail = email,,,,2023-08-31 16:15:00,2023-08-31 16:15:00,0.001s,PASSED
+email = xmail,,,,2023-08-31 16:15:00,2023-08-31 16:15:00,0.000s,PASSED
+,,,,,,,
+Test Cases/CreateUserTest,,,,2023-08-31 16:15:00,2023-08-31 16:15:01,1.290s,PASSED
+"response = sendRequest(findTestObject(""POST Register"", [""email"":email]))",,,,2023-08-31 16:15:00,2023-08-31 16:15:01,0.745s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-08-31 16:15:01,2023-08-31 16:15:01,0.004s,PASSED
+"verifyElementPropertyValue(response, ""id"", ""5"")",,,,2023-08-31 16:15:01,2023-08-31 16:15:01,0.067s,PASSED
+"getElementPropertyValue(response, ""token"")",,,,2023-08-31 16:15:01,2023-08-31 16:15:01,0.110s,PASSED
+,,,,,,,
+Test Cases/UpdateDataTest,,,,2023-08-31 16:15:01,2023-08-31 16:15:02,1.381s,PASSED
+"response = sendRequestAndVerify(findTestObject(""PUT Update User"", [""userName"":""Syahril"", ""userJob"":""QA Engineer""]))",,,,2023-08-31 16:15:01,2023-08-31 16:15:02,0.996s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-08-31 16:15:02,2023-08-31 16:15:02,0.002s,PASSED
+"verifyElementPropertyValue(response, ""name"", ""Syahril"")",,,,2023-08-31 16:15:02,2023-08-31 16:15:02,0.042s,PASSED
+"verifyElementPropertyValue(response, ""job"", ""QA Engineer"")",,,,2023-08-31 16:15:02,2023-08-31 16:15:02,0.020s,PASSED
